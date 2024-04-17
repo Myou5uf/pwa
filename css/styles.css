@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Calibri, sans-serif;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 16px;
+  text-align: center;
+  background-color: #ffcc00;
+  font-size: 32px;
+  font-weight: 700;
+  z-index: 1000;
+}
+
+header {
+  padding: 24px 16px;
+  font-size: 24px;
+  background-color: #E1DFC9;
+  text-align: center;
+  font-weight: 500;
+}
+
+#posts {
+  max-width: 700px;
+  margin: 16px auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.card {
+  border-radius: 6px;
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid  #E1DFC9;
+  box-shadow: 0 0  4px #ffcc00;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+}
+
+.field-group {
+  position: relative;
+  width: 264px;
+}
+
+.input-field {
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #EBEADF;
+  border-radius: 4px;
+  padding: 8px 12px 8px 38px;
+  border: none;
+}
+
+.input-field::placeholder {
+  color: #727376;
+}
+
+.input-field:hover {
+  background-color: #E1DFC9;
+}
+
+.input-field:focus-visible {
+  outline: 2px solid #FFCC00;
+  background-color: #fff;
+}
+
+.input-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  color: #727376;
+}
